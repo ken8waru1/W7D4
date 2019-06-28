@@ -8,8 +8,7 @@ const itemsReducer = (state = {}, action) => {
 
   switch (action.type) {
     case pokeActions.RECEIVE_ONE_POKEMON:
-      const newItem = { [action.items.id]: action.items };
-      return merge({}, state, newItem);
+      return merge({}, state, action.items);
     default:
       return state;
 

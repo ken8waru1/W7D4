@@ -6,10 +6,17 @@ class PokemonDetail extends React.Component {
     super(props);
   }
 
-  render () {
+  componentDidMount () {
+    this.props.requestOnePoke;
+  }
 
+  render () {
+    console.log('detail render');
+    // debugger
     return (
-      <h1>beautiful arrow, jerk</h1>
+      <div>
+        <h3>im beginning to hate pokemon.  even you bulbasaur</h3>
+      </div>
     )
   }
 }

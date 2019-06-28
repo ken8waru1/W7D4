@@ -11,7 +11,7 @@ export const selectOnePokemon = (state,id) => {
   let p = selectAllPokemon(state);
   // debugger
   p.forEach( poke => {
-    if ( poke[id] === id ) return poke;
+    if ( poke["id"] === id ) return poke;
   });
 };
 
